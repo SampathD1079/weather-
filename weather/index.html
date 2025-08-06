@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherFlix</title>
+  <link rel="stylesheet" href="style123.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">WeatherFlix</h1>
+    <div class="search-bar">
+      <input type="text" id="pinInput" placeholder="Enter pin code..." />
+      <input type="text" id="cityInput" placeholder="Search city..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Featured Weather Section -->
+    <section class="featured" id="weatherFeatured">
+      <!-- Featured city or pin code weather will appear here -->
+    </section>
+
+    <!-- Top Cities Weather -->
+    <section class="weather-row">
+      <h2 style="color: red;">Top Cities</h2>
+      <p style="font-size: small;">Any City</p>
+      <div class="card-row" id="topCities">
+        <!-- Dynamic cards for top cities -->
+      </div>
+    </section>
+
+    <!-- Weekly Forecast Section -->
+    <section class="weather-row">
+      <h2 style="color: red;">Weekly Forecast</h2>
+      <p style="font-size: small;">Know your daily weather forecast</p>
+      <div class="card-row" id="weeklyForecast">
+        <!-- Dynamic forecast cards -->
+      </div>
+    </section>
+  </main>
+
+  <script src="java2.js"></script>
+</body>
+</html>
